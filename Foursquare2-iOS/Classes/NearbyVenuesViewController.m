@@ -18,6 +18,7 @@
 @property (strong, nonatomic) CLLocationManager *locationManager;
 @property (strong, nonatomic) IBOutlet MKMapView *mapView;
 @property (strong, nonatomic) IBOutlet UIView *footer;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *settingsBtn;
 
 @property (strong, nonatomic) FSVenue *selected;
 @property (strong, nonatomic) NSArray *nearbyVenues;
@@ -39,7 +40,7 @@
 }
 
 - (void)updateRightBarButtonStatus {
-    self.navigationItem.rightBarButtonItem.enabled = [Foursquare2 isAuthorized];
+    self.navigationItem.rightBarButtonItem.enabled = [Foursquare2 isAuthorized];// YES;//[Foursquare2 isAuthorized];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

@@ -21,9 +21,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    [Foursquare2 setupFoursquareWithClientId:@"5P1OVCFK0CCVCQ5GBBCWRFGUVNX5R4WGKHL2DGJGZ32FDFKT"
-                                      secret:@"UPZJO0A0XL44IHCD1KQBMAYGCZ45Z03BORJZZJXELPWHPSAR"
-                                 callbackURL:@"testapp123://foursquare"];
+    [Foursquare2 setupFoursquareWithClientId:@"1AWQ1MYQFFOIUUKF3MWSBXR5LVQ5WPAOSBMKN3NZKL5PEFH3"
+                                      secret:@"WUEBM4OB5QRORJPZRDZZS4QJCTB2ER1ZR1L4SXG2QK5JUUMJ"
+                                 callbackURL:@"dogracy://foursquare"];
+    //    [Foursquare2 setupFoursquareWithClientId:@"5P1OVCFK0CCVCQ5GBBCWRFGUVNX5R4WGKHL2DGJGZ32FDFKT"
+    //                                      secret:@"UPZJO0A0XL44IHCD1KQBMAYGCZ45Z03BORJZZJXELPWHPSAR"
+    //                                 callbackURL:@"testapp123://foursquare"];
+    
+
+    
     return YES;
 }
 
