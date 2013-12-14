@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SettingsViewController : UIViewController
+@interface SettingsViewController : UIViewController<UITableViewDataSource>
+
+@property (strong, nonatomic) IBOutlet UIImageView *avatar;
+@property (strong, nonatomic) IBOutlet UITableView *profile;
 
 @end

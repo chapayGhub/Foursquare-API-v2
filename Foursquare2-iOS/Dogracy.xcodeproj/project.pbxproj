@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10A0A8FC185BBFAC00D06908 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A0A8FB185BBFAC00D06908 /* LoginController.m */; };
+		10A0A904185BC22900D06908 /* boxer_puppy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10A0A8FF185BC22900D06908 /* boxer_puppy.jpg */; };
+		10A0A905185BC22900D06908 /* chow_chow_puppy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10A0A900185BC22900D06908 /* chow_chow_puppy.jpg */; };
+		10A0A906185BC22900D06908 /* dog_disapproves.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10A0A901185BC22900D06908 /* dog_disapproves.jpg */; };
+		10A0A907185BC22900D06908 /* labrador_retriver_puppy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10A0A902185BC22900D06908 /* labrador_retriver_puppy.jpg */; };
+		10A0A908185BC22900D06908 /* siberian_husky.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10A0A903185BC22900D06908 /* siberian_husky.jpg */; };
 		1D3623260D0F684500981E51 /* FSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* FSAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -37,6 +43,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10A0A8FA185BBFAC00D06908 /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
+		10A0A8FB185BBFAC00D06908 /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
+		10A0A8FF185BC22900D06908 /* boxer_puppy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = boxer_puppy.jpg; sourceTree = "<group>"; };
+		10A0A900185BC22900D06908 /* chow_chow_puppy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chow_chow_puppy.jpg; sourceTree = "<group>"; };
+		10A0A901185BC22900D06908 /* dog_disapproves.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog_disapproves.jpg; sourceTree = "<group>"; };
+		10A0A902185BC22900D06908 /* labrador_retriver_puppy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = labrador_retriver_puppy.jpg; sourceTree = "<group>"; };
+		10A0A903185BC22900D06908 /* siberian_husky.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = siberian_husky.jpg; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* FSAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* FSAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSAppDelegate.m; sourceTree = "<group>"; };
@@ -111,8 +124,30 @@
 				4779884616AC64CF00038756 /* SettingsViewController.m */,
 				470849B817F4D5CD002538CA /* MainStoryboard.storyboard */,
 				470849BA17F607D6002538CA /* images */,
+				10A0A8FA185BBFAC00D06908 /* LoginController.h */,
+				10A0A8FB185BBFAC00D06908 /* LoginController.m */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		10A0A8FD185BC22900D06908 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				10A0A8FE185BC22900D06908 /* avatars */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		10A0A8FE185BC22900D06908 /* avatars */ = {
+			isa = PBXGroup;
+			children = (
+				10A0A8FF185BC22900D06908 /* boxer_puppy.jpg */,
+				10A0A900185BC22900D06908 /* chow_chow_puppy.jpg */,
+				10A0A901185BC22900D06908 /* dog_disapproves.jpg */,
+				10A0A902185BC22900D06908 /* labrador_retriver_puppy.jpg */,
+				10A0A903185BC22900D06908 /* siberian_husky.jpg */,
+			);
+			path = avatars;
 			sourceTree = "<group>";
 		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
@@ -126,6 +161,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				10A0A8FD185BC22900D06908 /* Resources */,
 				479EA375178A143400B2DD92 /* Foursquare-API-v2.podspec */,
 				4779886316AC6E2900038756 /* README.md */,
 				4779881E16AC248800038756 /* Foursquare2 */,
@@ -263,15 +299,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10A0A907185BC22900D06908 /* labrador_retriver_puppy.jpg in Resources */,
+				10A0A905185BC22900D06908 /* chow_chow_puppy.jpg in Resources */,
 				4779882C16AC25DF00038756 /* Default-568h@2x.png in Resources */,
 				470849B917F4D5CD002538CA /* MainStoryboard.storyboard in Resources */,
+				10A0A906185BC22900D06908 /* dog_disapproves.jpg in Resources */,
 				4779884C16AC686700038756 /* poweredByFoursquare_gray.png in Resources */,
 				4779884D16AC686700038756 /* poweredByFoursquare_gray@2x.png in Resources */,
 				4779886416AC6E2900038756 /* README.md in Resources */,
 				470849BC17F607D6002538CA /* testimage@2x.png in Resources */,
 				471EAC6716C0F17E009F88F9 /* pin@2x.png in Resources */,
+				10A0A904185BC22900D06908 /* boxer_puppy.jpg in Resources */,
 				471EAC6916C0F41C009F88F9 /* pin.png in Resources */,
 				478EA5111719335900062636 /* FSWebLogin.xib in Resources */,
+				10A0A908185BC22900D06908 /* siberian_husky.jpg in Resources */,
 				47CC3E231853483C00AEEA1F /* CHANGELOG.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +330,7 @@
 				4779882816AC248800038756 /* FSRequester.m in Sources */,
 				4779882916AC248800038756 /* FSTargetCallback.m in Sources */,
 				4779882A16AC248800038756 /* FSWebLogin.m in Sources */,
+				10A0A8FC185BBFAC00D06908 /* LoginController.m in Sources */,
 				4779883116AC536E00038756 /* NearbyVenuesViewController.m in Sources */,
 				4779883F16AC5A3900038756 /* FSVenue.m in Sources */,
 				4779884316AC623600038756 /* CheckinViewController.m in Sources */,
