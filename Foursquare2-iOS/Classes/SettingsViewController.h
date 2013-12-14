@@ -12,5 +12,9 @@
 
 @property (strong, nonatomic) IBOutlet UIImageView *avatar;
 @property (strong, nonatomic) IBOutlet UITableView *profile;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *editBtn;
+
+
+- (IBAction)editPressed:(id)sender;
 
 @end

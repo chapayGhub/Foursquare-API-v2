@@ -43,7 +43,7 @@ NSString* cellsIds[count] = {
     
     [super viewDidLoad];
     [self prepareViewForUser];
-    self.title = @"Settings";
+    self.title = @"Profile";
 }
 
 - (void)prepareViewForUser {
@@ -60,6 +60,13 @@ NSString* cellsIds[count] = {
                                NSString *imageUrl = [NSString stringWithFormat:@"%@200x200%@",
                                                     [result valueForKeyPath:@"response.user.photo.prefix"],
                                                     [result valueForKeyPath:@"response.user.photo.suffix"]];
+                               
+                               [self.profileData replaceObjectAtIndex:sex
+                                                           withObject:[result valueForKeyPath:@"response.user.gender"]];
+                               
+                               [self.profileData replaceObjectAtIndex:sex
+                                                           withObject:[result valueForKeyPath:@"response.user.relationship"]];
+                               
                                
                                NSURL *url = [NSURL URLWithString:imageUrl];
                                NSData* imgData =  [NSData dataWithContentsOfURL:url];
@@ -98,4 +105,11 @@ NSString* cellsIds[count] = {
     return cell;
 }
 
+- (void)tableView: (UITableView *)tableView didSelectRowAtIndexPath: (NSIndexPath *)indexPath {
+}
+
+- (IBAction)editPressed:(id)sender {
+    self.editBtn.title = (!self.profile.editing? @"Save": @"Edit");
+    [self.profile setEditing:!self.profile.editing animated:YES];
+}
 @end

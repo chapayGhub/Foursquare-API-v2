@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--Nearby Venues View Controller - Venues-->
+        <!--Nearby Venues View Controller - Areas-->
         <scene sceneID="9IT-in-CoF">
             <objects>
                 <tableViewController id="JaW-eG-Onn" customClass="NearbyVenuesViewController" sceneMemberID="viewController">
@@ -39,8 +39,8 @@
                             <outlet property="delegate" destination="JaW-eG-Onn" id="HUb-OP-0Ot"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Venues" id="x1F-pO-i1b">
-                        <barButtonItem key="rightBarButtonItem" title="Settings" id="0gB-k7-0GF">
+                    <navigationItem key="navigationItem" title="Areas" id="x1F-pO-i1b">
+                        <barButtonItem key="rightBarButtonItem" title="Profile" id="0gB-k7-0GF">
                             <connections>
                                 <segue destination="UeJ-5M-EAB" kind="push" id="Y3x-AM-SEZ"/>
                             </connections>
@@ -93,12 +93,12 @@
                                     <constraint firstAttribute="height" constant="112" id="xSl-Of-WMQ"/>
                                 </constraints>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="gA5-Sk-KaJ">
-                                <rect key="frame" x="13" y="193" width="294" height="317"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="gA5-Sk-KaJ">
+                                <rect key="frame" x="13" y="228" width="294" height="286"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="317" id="Zsi-WA-sct"/>
+                                    <constraint firstAttribute="height" constant="286" id="Zsi-WA-sct"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="317" id="yej-T2-KIW"/>
                                 </constraints>
                                 <prototypes>
@@ -257,9 +257,16 @@
                             <constraint firstAttribute="centerX" secondItem="rz4-br-d1e" secondAttribute="centerX" id="yyD-h6-ten"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="1nz-k5-vS4"/>
+                    <navigationItem key="navigationItem" id="1nz-k5-vS4">
+                        <barButtonItem key="rightBarButtonItem" title="Edit" id="d8n-i1-RgM">
+                            <connections>
+                                <action selector="editPressed:" destination="UeJ-5M-EAB" id="Qfo-sh-5Uy"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="avatar" destination="XGw-of-7cc" id="jgh-Wa-u3F"/>
+                        <outlet property="editBtn" destination="d8n-i1-RgM" id="r3R-mP-GAu"/>
                         <outlet property="profile" destination="gA5-Sk-KaJ" id="HgQ-k9-X6y"/>
                     </connections>
                 </viewController>
